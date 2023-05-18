@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <!-- Include necessary stylesheets -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Welcome, Admin</h1>
+  <h2>User Information</h2>
+  <!-- Add buttons and sub table for reservation details -->
+  <button id="generateTransactionBtn">Transactions</button>
+  <button id="accountManagementBtn">Account Management</button>
+  <button id="generateReportBtn">Generate Reports</button>
+   
+
+  <!-- account management -->
+  <!-- Table For Users -->
+  <div id="userContainer" style="display: block;">
+    <fieldset>
+      <legend>User Information</legend>
+      <table border="1px" id="userTable">
+        <thead>
+          <th>Guest ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Status</th>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+      </table>
+    </fieldset>
+  </div>
+
+  <!-- transaction -->
+  <!-- Table for Reservation Details -->
+  <div id="reservationContainer" style="display: none;">
+    <fieldset>
+      <legend>Reservation Details</legend>
+      <table border="1px" id="reservationTable">
+        <thead>
+          <th>Guest ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Check-In Date</th>
+          <th>Check-Out Date</th>
+          <th>Guest's Name</th>
+          <th>Contacts</th>
+          <th>Room No</th>
+          <th>Payment Status</th>
+          <th>Guest Status</th>
+        </thead>
+        <tbody id="reservationTableBody"></tbody>
+      </table>
+    </fieldset>
+  </div>
+
+  <!-- generated reports -->
+   <!-- Table for Generating the Reports -->
+   <div id="generatedReports" style="display: none;">
+    <fieldset>
+      <legend>Generated Report</legend>
+      <p id="reservedRoomsCount"></p>
+      <p id="checkedInCount"></p>
+      <p id="checkedOutCount"></p>
+      <p id="onHoldCount"></p>
+      <p id="paidCount"></p>
+      <p id="unpaidCount"></p>
+      <table border="1px" id="generatedReportstbl">
+        <thead>
+          <th>Reservation ID</th>
+          <th>Guest ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Check-In Date</th>
+          <th>Check-Out Date</th>
+          <th>Guest's Name</th>
+          <th>Contacts</th>
+          <th>Room No</th>
+          <th>Guest Status</th>
+          <th>Payment Status</th>
+
+        </thead>
+        <tbody id="reportsTableBody"></tbody>
+      </table>
+    </fieldset>
+  </div>
+
+
+
+  <p>Don't have an account? <a href="login.html" target="_top">Log Out</a></p>
+  <!-- Include the admin.js script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

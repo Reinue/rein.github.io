@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins",sans-serif;
+
+}
+body, html{
+   background: url(images/backreservation.png) no-repeat;
+   font-size: 62.5%;  
+   height: 100%;    
+   
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 62.5%;  
+}
+
+.header{
+   top: 0;
+   margin-left: 82%;
+   width: 18%;
+   background: #4C474A;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.header h1{
+   color:#fff;
+}
+
+.logo{
+   color: #F4EBD0;
+   font-size: large;
+}
+
+header a{
+   margin-left: 20px;
+   font-size: large;
+   color: #F4EBD0;
+   padding: 5px 8px;
+   border-radius: .5rem;
+}
+
+.header a:hover{
+   background-color:#F4EBD0;
+   color: #4C474A;
+}
+
+.item{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 58%;
+   height: 100%;
+   color: #F4EBD0;
+   background: transparent;
+   padding: 100px;
+   display: flex;
+   flex-direction: column;
+}
+.text-item h2{
+   font-size: 50px;
+   line-height: 1.2;
+   -webkit-text-stroke: 0.1px #000000;
+}
+.text-item p{
+   font-size: 17px;
+   margin-top: 40px ;
+}
+
+.reservation {
+   background: url(images/resform.png);
+   position: absolute;
+   left: 50%;
+   top: 48%;
+   transform: translate(-50%,-50%);
+   width: 75%;
+   height: 700px;
+   margin-top: 20px;
+   overflow: hidden;
+   border-radius: 100px;
+   border-style: solid;
+ }
+ 
+ .reservation form {
+   padding: 3rem;
+   height: 100%;
+   width: 550px;
+   margin-left: 55%;
+   position: relative;
+   background: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
+ }
+ 
+ .reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+ 
+ .reservation form h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-left: 10%;
+ }
+ 
+ .reservation form .flex .box{
+    flex: 1 1 40rem;
+ }
+ 
+ .reservation form .flex .box p{
+    margin-left: 3.5rem;
+    font-size: 1.9rem;
+    font-weight: bolder;
+ }
+ 
+ .reservation form .flex .box .input{
+    padding: .5rem;
+    margin: 1rem 5rem;
+    font-size: 1.8rem;
+    width: 75%;
+ }
+ 
+ .reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+ }
+
+ .btn{
+   width: 50%;
+   height: 45px;
+   margin-top: 10px;
+   margin-left: 96px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   background:#4C474A;
+   font-size: 18px;
+   font-weight:bolder;
+   color: #E9DAC4;
+}

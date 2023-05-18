@@ -1,0 +1,75 @@
+Loren Dale
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- NAVBAR CREATION -->
+<header class="header">
+  <h1>Hotel Management System</h1>  
+</header>
+<!-- LOGIN FORM CREATION -->
+<div class="background"></div>
+<div class="container">
+   <div class="item">
+       <h2 class="logo"><i class='bx bxl-drupal' ></i> Sandize Hotel</h2>
+       <div class="text-item">
+           <h2>Welcome to our exquisite hotel!<br><span>
+           </span></h2>
+           <p>We look forward to welcoming you to our hotel and creating a memorable experience for you.</p>
+       </div>
+   </div>
+   <div class="login-section" id = "form">
+       <div class="form-box login" id = "login-Form" style="display: inherit">
+           <form action="">
+               <h2>Log In</h2>
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="text" id="username" required onfocus="this.removeAttribute('readonly');" readonly />
+                   <label >Username</label>
+               </div>
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                   <input type="password" id="password" required onfocus="this.removeAttribute('readonly');" readonly />
+                  <label >Password</label>
+               </div>
+                <button id="submit" class="btn" type = "button">Log in</button><br>
+                   <div class="create-account">
+                     <p>Create a New Account? <a href="#signup" id="signup-link"><b>Sign Up</b></a></p>
+                   </div>
+           </form>
+       </div>
+       <div class="form-box register" id="registrationForm" style="display: none;">
+           <form action="">
+               <h2>Sign Up</h2>
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-user'></i></span>
+                  <input type="text" id="txtUserName" required onfocus="this.removeAttribute('readonly');" readonly />
+                   <label>Username</label>
+               </div>
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-envelope'></i></span>
+                   <input type="text" id="txtEmail" required onfocus="this.removeAttribute('readonly');" readonly />
+                   <label>Email</label>
+               </div>
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                   <input type="password" id="txtPwd" required onfocus="this.removeAttribute('readonly');" readonly />
+                   <label>Password</label>
+               </div>
+               <button class="btn" id="btnSignUp">Sign Up</button>
+                 <div class="create-account">
+                   <p>Already Have An Account? <a href="#login" id="login-link"> <b>Log In</b></a></p>
+                 </div> 
+           </form>
+       </div>
+   </div>
+</div>
+<script src="login.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

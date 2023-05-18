@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins",sans-serif;
+
+}
+body, html{
+   background: url(images/admin.png)repeat-y;
+   font-size: 62.5%;  
+   height: 100%;    
+   
+   /* Center and scale the image nicely */
+   background-position: center;
+   
+   background-size: cover;
+   font-size: 62.5%;  
+}
+
+.l{
+  font-weight: bold;
+  font-size: 3rem;
+  color:   #fff;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  background-color: #4C474A;
+  width: 20%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 10px;
+}
+
+  header{
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background: #FDF4E3;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+
+ header button{
+    margin-left: 2%;
+    font-size: 1.8rem;
+    color:  #4C474A;
+    font-weight: bolder;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+ }
+ 
+ header button:hover{
+    background-color:#816B64;
+    color:  #fff;
+ }
+
+ header a{
+  margin-left: 17%;
+  font-size: 1.8rem;
+  color:  #4C474A;
+  font-weight: bolder;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+ }
+
+ header a:hover{
+  background-color:#816B64;
+  color:  #fff;
+}
+  
+  header h1 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 125px;
+    margin-left: 20px;
+  }
+  
+  header h2 {
+    margin-top: 20px;
+  }
+  
+
+  table {
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 17%;
+    overflow: hidden;
+    border-radius: 30px;
+    border-style: solid;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Table Styles */
+#userTable, #reservationTable, #generatedReportstbl {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  th {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  td {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.484);
+    background-color: rgba(255, 255, 255, 0.484);
+    
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+    
+  #userTable button,
+  #reservationTable button,
+  #generatedReportstbl button {
+    font-size: 1rem;
+    background-color: #E9DAC4;
+    margin: 2px;;
+    color: #4C474A;
+    font-weight: bolder;
+    padding: 0.8rem 0.8rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #userTable button:hover,
+  #reservationTable button:hover,
+  #generatedReportstbl button:hover {
+    background-color: #816B64;
+    color: #E9DAC4;
+  }
+  
+  
+  #userTable thead th,
+  #reservationTable thead th,
+  #generatedReportstbl thead th {
+    background-color: #4C474A;
+  }
+  
+  #userTable tbody tr:hover,
+  #reservationTable tbody tr:hover,
+  #generatedReportstbl tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  #userTable tbody td,
+  #reservationTable tbody td,
+  #generatedReportstbl tbody td {
+    position: relative;
+  }
+  
+  #userTable tbody td:hover:before,
+  #reservationTable tbody td:hover:before,
+  #generatedReportstbl tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -10;
+  }
+
+  .GenRep{
+    top: 59%;
+    padding: 3rem;
+    height: 30%;
+    width: 550px;
+    margin-left: 33%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+  }
+  
+  #generatedReports legend {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #4C474A;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+  }
+  
+  #generatedReports p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #4C474A;
+    font-weight: bold;
+  }
+  
+  #generatedReports p::before {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #816B64;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
